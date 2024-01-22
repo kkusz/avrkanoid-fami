@@ -7,7 +7,7 @@
           \_| |_/\___/\_| \_|_|\_\__,_|_| |_|\___/|_|\__,_|      \_| \__,_|_| |_| |_|_|
                                                                                                                                               
           DIY Arkanoid "Vaus" paddle clone for Famicom and compatibles
-          based on Digispark ATTiny85 development board
+          based on Digispark ATtiny85 development board
           KKusz 2024 https://kusz.me https://github.com/kkusz/avrkanoid-fami
 
           Original work by Danjovic 2020
@@ -134,7 +134,7 @@ void setup() {
 
 void init_adc() {
 
-  ADMUX  = (1 << MUX0 ) | // Select AN0 ADMUX=[0011]
+  ADMUX  = (1 << MUX0 ) | // Select AN3 ADMUX=[0011]
            (1 << MUX1 ) | //
            (0 << MUX2 ) | //
            (0 << MUX3 ) | //
