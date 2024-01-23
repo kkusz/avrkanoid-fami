@@ -21,3 +21,9 @@ Alternatively you can use P5 instead of P3 if you're certain your Digispark is a
 
 ## Gallery
 ![20240120_231258](https://github.com/kkusz/avrkanoid-fami/assets/61786451/b409b472-ece0-444b-8fa2-f0d4fcac7646)
+
+## References
+* https://www.msx.org/wiki/Digi::Arka
+* https://www.nesdev.org/wiki/Arkanoid_controller
+* https://www.nesdev.org/wiki/Input_devices
+* https://hackaday.io/project/166068-vaus-arkanoid-paddle-clone
