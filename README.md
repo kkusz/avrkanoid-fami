@@ -25,9 +25,11 @@ Alternatively you can use P5 instead of P3 if you're certain your Digispark is a
 ## Linearity compensation of knob
 If your paddle goes really fast of really slow if you approach both edges of your knob, it might be that your potentiometer in not so linear as advertised.
 From my experience the difference is significant as showed in the figure below:
+
 ![Knob_ADC_relation](https://github.com/kkusz/avrkanoid-fami/assets/61786451/1509e33b-1968-49ea-8cf7-a8507f99f549)
 
 If you experiance similar issue, you might want to uncomment line 223 and comment out line 225 to turn on lookup table that compensates non linearity as in figure below:
+
 ![Linearity_figure](https://github.com/kkusz/avrkanoid-fami/assets/61786451/7453decd-58fc-46cb-8283-086da3da9680)
 
 Of course, your potentiometer can have different kind of linearity error, so you can build your own LUT by measuring your knob position with a protractor and read raw value using one of the [test ROMs](https://forums.nesdev.org/viewtopic.php?t=23801), provided you have a flashcart like PowerPak/Everdrive/Krzysiocart.
