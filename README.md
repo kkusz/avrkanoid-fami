@@ -34,6 +34,9 @@ Of course, your potentiometer can have different kind of linearity error, so you
 
 Once you have your measurements in place, you can use script [vaus-linear.py](vaus-linear.py) to build LUT using linear interpolation between points and paste it into code.
 
+## TODO
+* Check compatibility with Arkanoid II.
+
 ## References
 * https://www.msx.org/wiki/Digi::Arka
 * https://www.nesdev.org/wiki/Arkanoid_controller
