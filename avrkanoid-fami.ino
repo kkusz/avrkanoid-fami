@@ -5,7 +5,7 @@
           |  _  | | | |    /| |/ / _` | '_ \ / _ \| |/ _` |______|  _/ _` | '_ ` _ \| |
           | | | \ \_/ / |\ \|   < (_| | | | | (_) | | (_| |      | || (_| | | | | | | |
           \_| |_/\___/\_| \_|_|\_\__,_|_| |_|\___/|_|\__,_|      \_| \__,_|_| |_| |_|_|
-                                                                                                                                              
+                                                                                       
           DIY Arkanoid "Vaus" paddle clone for Famicom and compatibles
           based on Digispark ATtiny85 development board
           KKusz 2024 https://kusz.me https://github.com/kkusz/avrkanoid-fami
@@ -108,7 +108,7 @@ void setup() {
   GIMSK |= (1 << INT0) |
            (1 << PCIE);
   MCUCR =  (0 << ISC00) | // External INT on Falling edge ISC=[10])
-           (1 << ISC01); // on pin TRGA (clock). Don't care for Standard
+           (1 << ISC01); // on pin TRGA (clock)
   PCMSK = (0 << PCINT0) | //
           (1 << PCINT1) | // Pin change INT on PULSE pin
           (0 << PCINT2) | //
