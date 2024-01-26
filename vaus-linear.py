@@ -44,9 +44,10 @@ ylineint = np.interp(xvals,xline,yline)
 
 xvals2 = np.linspace(0,511,1024);
 yinterp2 = np.interp(xvals2,yinterp,ylineint)
-a = np.array([xvals2,yinterp2])
+print("const uint16_t Knob_Map[1024] PROGMEM = {")
+print(", ".join(map(lambda y: str(round(y*2)),yinterp2)))
+print("}")
 
-np.savetxt("data.csv",a,delimiter = ";")
 
 # plt.plot(xp,yp,'o-', label="measured output value")
 # plt.plot(xvals,yinterp,'-x')
